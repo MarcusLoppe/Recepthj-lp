@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Create express app
 var express = require("express")
 var app = express()
