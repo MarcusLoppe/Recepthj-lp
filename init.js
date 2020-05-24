@@ -4,7 +4,6 @@ var app = express()
 var db = require("./dbserver.js")
 var filterFunc = require("./filter.js")
 
-// { "keywords" : [ "ägg", "vitkål","vitlöksklyftor" , "ostronsås"]}
 // Server port
 var HTTP_PORT = 80
 // Start server
@@ -21,6 +20,7 @@ app.use(express.json());
    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
    next();
  });
+
 // Insert here other API endpoints
 // Insert here other API endpoints
 app.post("/api/recipe", (req, res, next) => {
